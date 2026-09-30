@@ -1,0 +1,188 @@
+[
+  {
+    "id": "homicide-violent",
+    "code": "CAT-01-HOM",
+    "title": "Homicide & Violent Crime",
+    "casesAnalyzed": "2,840+",
+    "casesCount": 2840,
+    "description": "Investigation of homicides, aggravated assaults, serial offenses, and violent encounters. Comprehensive autopsy consultation, lethal wound pattern matching, ballistic firearm matching, and chronological timeline reconstruction.",
+    "tags": [
+      "Bloodstain Analysis",
+      "Wound Patterns",
+      "Weapon ID",
+      "Time of Death",
+      "Ballistics"
+    ],
+    "threatLevel": "Critical",
+    "sampleCaseRef": "CASE #FS-2048-H",
+    "leadAnalyst": "Marcus Kowalski, M.D.",
+    "keyVectors": [
+      "Sharp force trauma",
+      "Blunt impact spatter",
+      "Close-contact gunshot",
+      "Defensive wounds"
+    ],
+    "evidenceTypes": [
+      "Biological blood spatter",
+      "Striated bullet casings",
+      "Sub-dermal bruising patterns",
+      "Scene LiDAR map"
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "cybercrime-breach",
+    "code": "CAT-02-CYB",
+    "title": "Cybercrime & Data Breach",
+    "casesAnalyzed": "4,200+",
+    "casesCount": 4200,
+    "description": "Deep-dive investigation of ransomware campaigns, state-sponsored cyber intrusions, corporate data exfiltration, dark web botnets, credential harvesting, and high-frequency wire fraud. Complete digital lifecycle preservation.",
+    "tags": [
+      "Network Forensics",
+      "Malware Analysis",
+      "Data Recovery",
+      "IP Tracing",
+      "Crypto Flow"
+    ],
+    "threatLevel": "Critical",
+    "sampleCaseRef": "CASE #FS-8829-C",
+    "leadAnalyst": "James Mitchell (Former FBI Cyber)",
+    "keyVectors": [
+      "Spear phishing vector",
+      "Zero-day exploit",
+      "C2 beaconing",
+      "Memory-only payload"
+    ],
+    "evidenceTypes": [
+      "Volatile RAM dumps",
+      "Pcap packet captures",
+      "Encrypted database artifacts",
+      "Bitcoin ledger traces"
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "financial-fraud",
+    "code": "CAT-03-FRD",
+    "title": "Financial Fraud & White-Collar",
+    "casesAnalyzed": "3,150+",
+    "casesCount": 3150,
+    "description": "Forensic accounting, offshore shell entity disentanglement, multi-million dollar embezzlement, securities manipulation, Ponzi architecture, and commercial ledger manipulation with court-ready transactional exhibits.",
+    "tags": [
+      "Forensic Accounting",
+      "Crypto Tracing",
+      "Document Forgery",
+      "Shell Companies",
+      "Audit Trail"
+    ],
+    "threatLevel": "High",
+    "sampleCaseRef": "CASE #FS-4412-F",
+    "leadAnalyst": "Dr. Sarah Patel",
+    "keyVectors": [
+      "Fictitious vendor billing",
+      "Layered offshore wire transfers",
+      "Forged executive sign-offs",
+      "Algorithmic skimming"
+    ],
+    "evidenceTypes": [
+      "SWIFT transaction logs",
+      "Altered accounting ledgers",
+      "Decrypted executive emails",
+      "Offshore banking registry"
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "narcotics-trafficking",
+    "code": "CAT-04-NAR",
+    "title": "Narcotics & Drug Trafficking",
+    "casesAnalyzed": "2,600+",
+    "casesCount": 2600,
+    "description": "Chemical purity profiling of seized illicit substances, synthetic drug signature mapping, clandestine synthesis lab detection, and cartel distribution network topology analysis via encrypted burner telemetry.",
+    "tags": [
+      "GC-MS Analysis",
+      "Network Mapping",
+      "Precursor Tracking",
+      "Lab Profiling",
+      "Purity Testing"
+    ],
+    "threatLevel": "High",
+    "sampleCaseRef": "CASE #FS-6190-N",
+    "leadAnalyst": "Dr. Rachel Winters",
+    "keyVectors": [
+      "Contraband concealment",
+      "Precursor chemical acquisition",
+      "Encrypted app communications",
+      "Logistics smuggling"
+    ],
+    "evidenceTypes": [
+      "Spectrometry mass spectra",
+      "Packaged brick fingerprint stamps",
+      "Burner phone tower dumps",
+      "Residue swab assays"
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "arson-fire",
+    "code": "CAT-05-ARS",
+    "title": "Arson & Fire Investigation",
+    "casesAnalyzed": "1,180+",
+    "casesCount": 1180,
+    "description": "Determining exact origin and burn acceleration patterns in commercial and residential blazes. Chemical identification of volatile hydrocarbon accelerants, electrical fault arc mapping, and explosive blast residue testing.",
+    "tags": [
+      "Accelerant Detection",
+      "Burn Patterns",
+      "Fire Modeling",
+      "Debris Analysis",
+      "Arc Mapping"
+    ],
+    "threatLevel": "Medium",
+    "sampleCaseRef": "CASE #FS-3091-A",
+    "leadAnalyst": "Dr. Rachel Winters",
+    "keyVectors": [
+      "Pour pattern ignitable liquid",
+      "Delayed timer ignition",
+      "Electrical bypass arcing",
+      "Multi-point origin setting"
+    ],
+    "evidenceTypes": [
+      "GC-MS accelerant peak profiles",
+      "Char depth measurements",
+      "Copper wire melt beads",
+      "Oxygen depletion models"
+    ],
+    "status": "ACTIVE"
+  },
+  {
+    "id": "cold-cases-missing",
+    "code": "CAT-06-CLD",
+    "title": "Cold Cases & Missing Persons",
+    "casesAnalyzed": "980+",
+    "casesCount": 980,
+    "description": "Re-examination of unsolved cold homicides and long-term missing individuals leveraging modern forensic breakthroughs: investigative genetic genealogy (IGG), isotope geographic sourcing, and 3D skull facial reconstruction.",
+    "tags": [
+      "Genealogy",
+      "Facial Recon",
+      "Isotope Analysis",
+      "Evidence Review",
+      "STR Re-analysis"
+    ],
+    "threatLevel": "Elevated",
+    "sampleCaseRef": "CASE #FS-1014-X",
+    "leadAnalyst": "Dr. Sarah Patel",
+    "keyVectors": [
+      "Degraded touch evidence",
+      "Unidentified skeletal remains",
+      "Distant relative matching",
+      "Water isotope geographic path"
+    ],
+    "evidenceTypes": [
+      "Next-Gen DNA SNP microarray",
+      "Enamel strontium isotope ratio",
+      "3D reconstructed digital bust",
+      "Archive evidence logs"
+    ],
+    "status": "ACTIVE"
+  }
+]

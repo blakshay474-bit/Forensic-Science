@@ -1,0 +1,66 @@
+[
+  {
+    "id": "rachel-winters",
+    "initials": "DR",
+    "name": "Dr. Rachel Winters",
+    "role": "Chief Forensic Scientist",
+    "credentials": "Ph.D. Forensic Chemistry (MIT) · ISO Senior Assessor",
+    "bio": "22+ years leading accredited high-containment forensics laboratories. Internationally recognized authority in trace spectroscopy, mass spectrometry, and biological chemical evidence profiling. Published 50+ peer-reviewed papers.",
+    "specialties": [
+      "Trace Mass Spectrometry",
+      "Toxicology Profiles",
+      "Courtroom Testimony",
+      "ISO 17025 Accreditation"
+    ],
+    "publicationsCount": 54,
+    "experienceYears": 22
+  },
+  {
+    "id": "james-mitchell",
+    "initials": "JM",
+    "name": "James Mitchell",
+    "role": "Digital Forensics Lead",
+    "credentials": "Former FBI Cyber Division · CFCE & EnCE Certified",
+    "bio": "16+ years investigating complex state-level hacking intrusions, ransomware syndicates, and deep web money laundering schemes. Expert in zero-day exploit attribution and chip-off memory acquisition.",
+    "specialties": [
+      "Malware Reverse-Engineering",
+      "Mobile JTAG Extraction",
+      "Blockchain Tracing",
+      "Ransomware Attribution"
+    ],
+    "publicationsCount": 28,
+    "experienceYears": 16
+  },
+  {
+    "id": "sarah-patel",
+    "initials": "SP",
+    "name": "Dr. Sarah Patel",
+    "role": "Crime Analytics Director",
+    "credentials": "Ph.D. Criminal Justice (Cambridge) · AI Lead",
+    "bio": "Specializes in spatial crime pattern modeling, machine learning behavior classification algorithms, and high-dimensional predictive policing frameworks utilized by federal task forces globally.",
+    "specialties": [
+      "Predictive Spatial Models",
+      "Pattern Correlation Engines",
+      "Hotspot Heatmaps",
+      "Modus Operandi Taxonomy"
+    ],
+    "publicationsCount": 39,
+    "experienceYears": 14
+  },
+  {
+    "id": "marcus-kowalski",
+    "initials": "MK",
+    "name": "Marcus Kowalski",
+    "role": "Forensic Pathologist",
+    "credentials": "M.D. Board-Certified Pathologist · AFTE Fellow",
+    "bio": "Over 18 years performing complex death investigations and wound ballistics analysis. Testified as certified expert medical witness in over 300 major homicide criminal trials worldwide.",
+    "specialties": [
+      "Wound Ballistics",
+      "Bloodstain Pattern Analysis (BPA)",
+      "LiDAR Scene Recon",
+      "Time-of-Death Estimation"
+    ],
+    "publicationsCount": 42,
+    "experienceYears": 18
+  }
+]

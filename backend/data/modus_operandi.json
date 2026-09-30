@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mo-01",
+    "index": "MO Category 01",
+    "title": "Premeditated & Planned Operations",
+    "riskRating": "High Risk",
+    "riskColor": "text-primary border-primary/30 bg-primary/10",
+    "tag": "Low Detection Rate · High Planning",
+    "description": "Highly organized crimes involving multi-week planning, target reconnaissance, and deliberate anti-forensic precautions. Perpetrators demonstrate disciplined composure and intentional counter-surveillance tactics.",
+    "behavioralTraits": [
+      "Extensive pre-operational surveillance of target",
+      "Use of disposable burner hardware and disguises",
+      "Deliberate deployment of chemical bleach / scene cleaning",
+      "Calculated escape routing avoiding city CCTV corridors"
+    ],
+    "detectionDifficulty": "High",
+    "counterMeasures": [
+      "Macro-pattern telemetry across geographic jurisdictions",
+      "Sub-microscopic touch DNA collection on indirect contact zones",
+      "Time-series cellular anomaly detection algorithms"
+    ]
+  },
+  {
+    "id": "mo-02",
+    "index": "MO Category 02",
+    "title": "Opportunistic & Impulse Crimes",
+    "riskRating": "Medium Risk",
+    "riskColor": "text-scientific-ice border-scientific-ice/30 bg-scientific-ice/10",
+    "tag": "High Evidence Trail · Emotional Trigger",
+    "description": "Crimes committed without pre-existing forethought, sparked by sudden opportunity, financial desperation, or emotional escalation. Perpetrators leave substantial physical forensic traces due to hasty execution.",
+    "behavioralTraits": [
+      "Zero scene preparation or cleanup attempted",
+      "Immediate proximity to perpetrator residence or workplace",
+      "Chaotic physical damage and mixed weapon types",
+      "Unstructured discard of stolen goods or murder instruments"
+    ],
+    "detectionDifficulty": "Low",
+    "counterMeasures": [
+      "Rapid latent fingerprint dusting and AFIS direct lookup",
+      "Immediate blood spatter and biological DNA swabbing",
+      "Neighborhood CCTV optical recognition scans"
+    ]
+  },
+  {
+    "id": "mo-03",
+    "index": "MO Category 03",
+    "title": "Serial & Repeat Offenders",
+    "riskRating": "Critical Risk",
+    "riskColor": "text-critical-red border-critical-red/30 bg-critical-red/10",
+    "tag": "Pattern-Based · Escalating Severity",
+    "description": "Chronic recurring criminal patterns exhibiting evolving sophistication and signature psychological rituals. Involves serial violent offenders, recurring commercial burglars, or habitual fraud operatives.",
+    "behavioralTraits": [
+      "Consistent signature or psychological trophy-taking",
+      "Progressive refinement in evading investigative detection",
+      "Geographic hunting zones centered around anchor points",
+      "Interval cooling-off periods between crime incidents"
+    ],
+    "detectionDifficulty": "Extremely High",
+    "counterMeasures": [
+      "Rossmo geographic spatial profiling algorithms",
+      "Psychological signature matrix correlation",
+      "National serial crime cross-jurisdiction data linkage"
+    ]
+  },
+  {
+    "id": "mo-04",
+    "index": "MO Category 04",
+    "title": "Technology-Enabled Crimes",
+    "riskRating": "Critical Risk",
+    "riskColor": "text-tertiary border-tertiary/30 bg-tertiary/10",
+    "tag": "Rapidly Evolving · High Complexity",
+    "description": "Operations engineered through sophisticated cyber toolchains—ransomware-as-a-service (RaaS), AI voice/video deepfakes, dark web cryptocurrency tumbling, automated credential stuffing, and IoT network exploitation.",
+    "behavioralTraits": [
+      "Automated script execution with multi-stage payloads",
+      "Routing traffic through Tor, bulletproof proxies, and VPNs",
+      "Decentralized affiliate payout networks via Monero/Tornado",
+      "Deployment of zero-day exploits targeting enterprise infrastructure"
+    ],
+    "detectionDifficulty": "Extremely High",
+    "counterMeasures": [
+      "Real-time network memory capture and kernel debugging",
+      "Cryptocurrency multi-hop heuristic transaction graph analysis",
+      "Compiler fingerprinting and code author attribution"
+    ]
+  },
+  {
+    "id": "mo-05",
+    "index": "MO Category 05",
+    "title": "Organized Crime Syndicates",
+    "riskRating": "High Risk",
+    "riskColor": "text-primary border-primary/30 bg-primary/10",
+    "tag": "Multi-Jurisdictional · Cell Structure",
+    "description": "Hierarchically coordinated criminal syndicates managing cross-border narcotics logistics, counterfeit goods, human trafficking, and industrial extortion. Uses compartmentalized cells and military-grade encryption.",
+    "behavioralTraits": [
+      "Compartmentalized communication channels with ephemeral keys",
+      "Use of legitimate corporate logistics fronts and freight routes",
+      "Internal discipline enforcement and counter-intelligence protocols",
+      "Systematic corruption and coercion of port and transit nodes"
+    ],
+    "detectionDifficulty": "High",
+    "counterMeasures": [
+      "Social network link analysis and graph centrality metrics",
+      "Cross-border customs manifest anomalies and cargo spectrometry",
+      "Financial entity reconciliation via corporate registries"
+    ]
+  },
+  {
+    "id": "mo-06",
+    "index": "MO Category 06",
+    "title": "Insider Threat & Espionage",
+    "riskRating": "High Risk",
+    "riskColor": "text-amber-glow border-amber-glow/30 bg-amber-glow/10",
+    "tag": "Hard to Detect · Privileged Access",
+    "description": "Trusted personnel exploiting authorized administrative credentials to steal proprietary intellectual property, tamper with integrity records, or leak confidential state or enterprise intelligence.",
+    "behavioralTraits": [
+      "Off-hours anomalous database access and mass file exports",
+      "Unsanctioned use of encrypted USB storage or cloud staging",
+      "Behavioral indicators: sudden lifestyle changes, foreign travel",
+      "Attempts to wipe event viewer logs and SIEM audit records"
+    ],
+    "detectionDifficulty": "Extremely High",
+    "counterMeasures": [
+      "User and Entity Behavior Analytics (UEBA) telemetry",
+      "File integrity monitoring with immutable cryptographic logs",
+      "Shadow copy and unallocated drive sector data carving"
+    ]
+  }
+]

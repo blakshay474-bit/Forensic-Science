@@ -1,0 +1,47 @@
+[
+  {
+    "rank": 1,
+    "name": "Metro District Central",
+    "incidents": 1240,
+    "dominantTypes": "Cybercrime + Wire Fraud dominant",
+    "riskLevel": "Critical",
+    "coordinates": "40.7128° N, 74.0060° W",
+    "activeSurveillance": true
+  },
+  {
+    "rank": 2,
+    "name": "Industrial Corridor East",
+    "incidents": 980,
+    "dominantTypes": "Narcotics + Commercial Arson dominant",
+    "riskLevel": "Severe",
+    "coordinates": "40.7484° N, 73.9857° W",
+    "activeSurveillance": true
+  },
+  {
+    "rank": 3,
+    "name": "Harbor Zone South",
+    "incidents": 845,
+    "dominantTypes": "Trafficking + Cargo Smuggling dominant",
+    "riskLevel": "High",
+    "coordinates": "40.6892° N, 74.0445° W",
+    "activeSurveillance": true
+  },
+  {
+    "rank": 4,
+    "name": "Residential Suburbs North",
+    "incidents": 620,
+    "dominantTypes": "Burglary + Domestic Disputes dominant",
+    "riskLevel": "Elevated",
+    "coordinates": "40.7829° N, 73.9654° W",
+    "activeSurveillance": false
+  },
+  {
+    "rank": 5,
+    "name": "Financial District West",
+    "incidents": 510,
+    "dominantTypes": "White-Collar + Identity Exfiltration",
+    "riskLevel": "Elevated",
+    "coordinates": "40.7077° N, 74.0083° W",
+    "activeSurveillance": true
+  }
+]

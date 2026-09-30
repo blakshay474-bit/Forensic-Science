@@ -1,0 +1,140 @@
+[
+  {
+    "id": "biometrics",
+    "refNo": "SVC-BIO-01",
+    "title": "Fingerprint & Biometric Analysis",
+    "icon": "fingerprint",
+    "accent": "primary",
+    "tagline": "Latent Print Processing & Automated AFIS Cross-Matching",
+    "description": "Advanced latent fingerprint processing utilizing automated AFIS integration, micro-ridge detail analysis, palm and foot print comparison, and biometric cross-referencing with national and international security databases.",
+    "technologies": [
+      "AFIS Database Engine",
+      "Cyanoacrylate Fuming",
+      "Vacuum Metal Deposition",
+      "Multi-Spectral Imaging"
+    ],
+    "capabilities": [
+      "Latent print recovery from porous & non-porous surfaces",
+      "High-resolution minutiae point verification",
+      "Palm & partial print digital reconstruction",
+      "Biometric facial landmark correlation"
+    ],
+    "courtroomAdmissibility": "100% Daubert Standard Compliant",
+    "turnaroundAvg": "24-48 Hours"
+  },
+  {
+    "id": "digital-cyber",
+    "refNo": "SVC-CYB-02",
+    "title": "Digital & Cyber Forensics",
+    "icon": "terminal",
+    "accent": "tertiary",
+    "tagline": "Deep Memory, Cloud & Hardware Evidence Extraction",
+    "description": "Complete digital evidence recovery from workstations, mobile smartphones, IoT appliances, darknet nodes, and virtual cloud storage. Comprehensive network intrusion analysis, zero-day malware disassembly, and illicit crypto asset tracing.",
+    "technologies": [
+      "EnCase Certified",
+      "Cellebrite UFED Ultimate",
+      "Volatility Memory Framework",
+      "Chainalysis Reactor"
+    ],
+    "capabilities": [
+      "Chip-off & JTAG physical mobile extractions",
+      "Volatile RAM memory capture & decryption",
+      "Ransomware reverse-engineering & IOC extraction",
+      "Cryptocurrency multi-hop mixing attribution"
+    ],
+    "courtroomAdmissibility": "ISO/IEC 27037 Digital Evidence Admissible",
+    "turnaroundAvg": "12-36 Hours"
+  },
+  {
+    "id": "dna-biological",
+    "refNo": "SVC-DNA-03",
+    "title": "DNA & Biological Evidence",
+    "icon": "dna",
+    "accent": "secondary",
+    "tagline": "Next-Gen STR Profiling & Investigative Genetic Genealogy",
+    "description": "Ultra-sensitive STR profiling, touch DNA recovery from micro-surfaces, mitochondrial DNA sequencing, forensic genetic genealogy, CODIS database searching, and clean-room contamination-free biological evidence processing.",
+    "technologies": [
+      "ThermoFisher SeqStudio",
+      "Illumina MiSeq FGx",
+      "CODIS Core STRs",
+      "GEDmatch Pro"
+    ],
+    "capabilities": [
+      "Touch DNA recovery down to 5 picograms",
+      "Mitochondrial DNA analysis for degraded bone samples",
+      "Kinship & distant genealogical ancestor mapping",
+      "Y-STR profiling for mixed sexual assault evidence"
+    ],
+    "courtroomAdmissibility": "FBI QAS & ISO 17025 Certified",
+    "turnaroundAvg": "48-72 Hours"
+  },
+  {
+    "id": "toxicology-chem",
+    "refNo": "SVC-TOX-04",
+    "title": "Toxicology & Analytical Chemistry",
+    "icon": "science",
+    "accent": "evidence-green",
+    "tagline": "Mass Spectrometry Trace Identification & Poison Screening",
+    "description": "High-precision drug screening, lethal poison detection, blood alcohol concentration (BAC) analysis, gunshot residue (GSR) particle characterization, accelerant fingerprinting, and trace chemical profiling with GC-MS and LC-MS/MS instruments.",
+    "technologies": [
+      "Agilent 7890B GC-MS",
+      "Sciex Triple Quad LC-MS/MS",
+      "SEM-EDX for GSR",
+      "FTIR Spectrophotometry"
+    ],
+    "capabilities": [
+      "Synthetic opioid & fentanyl analogue profiling",
+      "Post-mortem toxicology tissue screening",
+      "Gunshot residue (GSR) spherical primer detection",
+      "Arson fire accelerant signature matching"
+    ],
+    "courtroomAdmissibility": "ABFT Accredited Analytical Methodologies",
+    "turnaroundAvg": "24-48 Hours"
+  },
+  {
+    "id": "crime-scene-recon",
+    "refNo": "SVC-REC-05",
+    "title": "Crime Scene Reconstruction",
+    "icon": "view_in_ar",
+    "accent": "primary",
+    "tagline": "3D Spatial LiDAR Scanning & Bloodstain Trajectory Physics",
+    "description": "Millimeter-accurate 3D LiDAR point cloud scene scanning, bloodstain pattern analysis (BPA), ballistic trajectory angle calculation, chronometric event sequencing, and immersive virtual reality courtroom scene reconstructions.",
+    "technologies": [
+      "FARO Focus 3D Laser Scanner",
+      "Leica Cyclone LiDAR",
+      "HemoSpat BPA Software",
+      "Unreal Engine 5 VR HUD"
+    ],
+    "capabilities": [
+      "3D Point-cloud spatial scene preservation",
+      "Blood spatter velocity & area-of-origin calculation",
+      "Bullet trajectory & line-of-fire vectoring",
+      "Chronological timeline event sequencing"
+    ],
+    "courtroomAdmissibility": "IABPA & AFTE Standardized Validations",
+    "turnaroundAvg": "3-5 Days"
+  },
+  {
+    "id": "document-handwriting",
+    "refNo": "SVC-DOC-06",
+    "title": "Document & Handwriting Analysis",
+    "icon": "history_edu",
+    "accent": "tertiary",
+    "tagline": "Questioned Document Examination & Spectral Ink Verification",
+    "description": "Microscopic questioned document examination, dynamic handwriting comparison, signature authenticity verification, hyperspectral ink dating, paper fiber composition profiling, and advanced detection of erased, altered, or forged instruments.",
+    "technologies": [
+      "Foster+Freeman VSC 8000",
+      "ESDA Indented Writing Device",
+      "Stereomicroscopy",
+      "Raman Spectroscopy"
+    ],
+    "capabilities": [
+      "Indented impression recovery on multi-page pads",
+      "Hyperspectral ink age & chemical formulation testing",
+      "Signature biomechanical velocity analysis",
+      "Counterfeit banknote & security paper validation"
+    ],
+    "courtroomAdmissibility": "SWGDOC Recommended Standards Compliant",
+    "turnaroundAvg": "24-48 Hours"
+  }
+]

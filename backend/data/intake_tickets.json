@@ -1,0 +1,44 @@
+[
+  {
+    "caseRef": "FS-1441-CLD",
+    "fullName": "Special Agent Scully",
+    "agency": "FBI Forensic Science Division",
+    "email": "scully@fbi.gov",
+    "phone": "+1 (555) 019-7482",
+    "caseType": "Cold Case Review & Genealogy",
+    "urgency": "Expedited (24-48h Turnaround)",
+    "details": "Cold case STR re-analysis for unidentified skeletal specimen excavated in Sector 4.",
+    "status": "PENDING_REVIEW",
+    "assignedLeadAnalyst": "Dr. Sarah Patel",
+    "sha256CipherLock": "0e6bd6632ad9cbd260f53d2211d0ffd3e6d89afae0d026f8034b34b8c9dcc9ed",
+    "submittedAt": "2026-09-09T06:34:18.298Z",
+    "evidenceArtifacts": []
+  },
+  {
+    "caseRef": "FS-1436-HOM",
+    "fullName": "Special Agent Mulder",
+    "agency": "FBI Violent Crimes Unit",
+    "email": "mulder@fbi.gov",
+    "phone": "+1 (555) 019-2834",
+    "caseType": "Homicide Investigation",
+    "urgency": "Critical Emergency (<12h Direct Dispatch)",
+    "details": "Suspicious biological residue and unidentifiable latent marks recovered from secondary crime scene perimeter.",
+    "status": "PENDING_REVIEW",
+    "assignedLeadAnalyst": "Marcus Kowalski, M.D.",
+    "sha256CipherLock": "d3c60b1aaf6350bd8c269da22854e11ea224e1d2d69e0c0840249391e65095a7",
+    "submittedAt": "2026-09-09T06:32:23.012Z",
+    "evidenceArtifacts": [
+      {
+        "id": "EVD-1788935605834",
+        "filename": "evidence-1788935605825-759754662.txt",
+        "originalName": "test_evidence.txt",
+        "mimeType": "text/plain",
+        "sizeBytes": 56,
+        "sha256Checksum": "e6afb794fe01422f7072ec9fb1c2f407d812cf158cd520b05fb44e3f5a24f240",
+        "uploadedAt": "2026-09-09T06:33:25.834Z",
+        "filePath": "/uploads/evidence-1788935605825-759754662.txt",
+        "notes": "Fingerprint lift from window frame"
+      }
+    ]
+  }
+]

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ForenSolve - Forensic Intelligence Platform</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;700&amp;family=Sora:wght@500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#31353b",
+                        "tertiary-fixed": "#97f0ff",
+                        "on-error": "#690005",
+                        "surface-dim": "#101419",
+                        "secondary": "#96ccff",
+                        "on-secondary-fixed": "#001d32",
+                        "secondary-fixed": "#cee5ff",
+                        "surface": "#101419",
+                        "inverse-on-surface": "#2d3136",
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "on-primary-fixed-variant": "#5e4200",
+                        "tertiary-container": "#00c1d5",
+                        "scientific-ice": "#8BC6FF",
+                        "on-secondary-fixed-variant": "#004a76",
+                        "inverse-surface": "#e0e2ea",
+                        "on-background": "#e0e2ea",
+                        "surface-variant": "#31353b",
+                        "amber-glow": "#F0C76A",
+                        "outline-variant": "#4e4637",
+                        "on-secondary-container": "#8cc4fa",
+                        "secondary-container": "#005281",
+                        "on-secondary": "#003353",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#f0bf64",
+                        "surface-container-lowest": "#0a0e13",
+                        "on-surface-variant": "#d2c5b2",
+                        "on-primary": "#412d00",
+                        "surface-bright": "#36393f",
+                        "surface-deep": "#07090C",
+                        "on-primary-fixed": "#271900",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#f4c367",
+                        "primary-container": "#d6a84f",
+                        "outline": "#9b8f7e",
+                        "surface-container-high": "#262a30",
+                        "on-surface": "#e0e2ea",
+                        "on-tertiary": "#00363d",
+                        "inverse-primary": "#7c5800",
+                        "tertiary-fixed-dim": "#00daf1",
+                        "background": "#101419",
+                        "secondary-fixed-dim": "#96ccff",
+                        "evidence-green": "#43A047",
+                        "on-tertiary-fixed": "#001f24",
+                        "primary-fixed-dim": "#f0bf64",
+                        "slate-muted": "#546E7A",
+                        "surface-container": "#1c2025",
+                        "critical-red": "#E53935",
+                        "on-primary-container": "#583e00",
+                        "on-tertiary-container": "#004a52",
+                        "surface-elevated": "#10151C",
+                        "primary-fixed": "#ffdea6",
+                        "surface-container-low": "#181c21",
+                        "tertiary": "#00dff6"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-max": "1440px",
+                        "margin-edge": "24px",
+                        "unit": "8px",
+                        "gutter": "16px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["JetBrains Mono", "monospace"],
+                        "headline-md": ["Sora", "sans-serif"],
+                        "display-lg": ["Space Grotesk", "sans-serif"],
+                        "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+                        "body-lg": ["IBM Plex Sans", "sans-serif"],
+                        "headline-lg": ["Space Grotesk", "sans-serif"],
+                        "data-mono": ["JetBrains Mono", "monospace"],
+                        "body-md": ["IBM Plex Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(244, 195, 103, 0.5);
+        }
+        /* Custom Scrollbar hide */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Scanning overlay */
+        .scan-line {
+            background: linear-gradient(to bottom, transparent, rgba(244, 195, 103, 0.2) 50%, transparent);
+            animation: scan 4s linear infinite;
+        }
+        @keyframes scan {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(400%); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant flex justify-between items-center px-margin-edge h-16">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary fill text-2xl">security</span>
+<h1 class="font-label-caps text-label-caps text-primary tracking-widest hidden sm:block">FORENSOLVE // COMMAND CENTER</h1>
+<h1 class="font-label-caps text-label-caps text-primary tracking-widest sm:hidden">FS // CMD</h1>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-evidence-green">
+<span class="animate-pulse">●</span> SYSTEM ONLINE
+        </div>
+</header>
+<main class="flex-1 mt-16 mb-20 md:mb-0">
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 px-margin-edge overflow-hidden border-b border-outline-variant">
+<!-- Background WebGL Animation -->
+<div class="absolute inset-0 z-0 opacity-40">
+
+</div>
+<div class="relative z-10 max-w-container-max mx-auto">
+<div class="font-data-mono text-data-mono text-tertiary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">memory</span>
+                    UNIT_ID: ALPHA-9 | LIVE FEED
+                </div>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-6 leading-tight">
+                    Unraveling Truth Through<br/>
+<span class="text-primary text-glow">Forensic Science</span>
+</h2>
+<p class="font-body-md text-on-surface-variant max-w-lg mb-10 border-l-2 border-primary pl-4">
+                    ForenSolve Experts delivers cutting-edge forensic analysis, crime pattern correlation, and data-driven insights to law enforcement agencies worldwide.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-[0_0_15px_rgba(244,195,103,0.3)]">
+<span class="material-symbols-outlined text-lg">science</span>
+                        EXPLORE SERVICES
+                    </button>
+<button class="bg-transparent border border-secondary-fixed text-secondary-fixed font-data-mono text-data-mono px-8 py-4 rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-secondary-fixed/10 transition-colors">
+<span class="material-symbols-outlined text-lg">analytics</span>
+                        VIEW INTELLIGENCE
+                    </button>
+</div>
+</div>
+</section>
+<!-- Intelligence Strip -->
+<section class="bg-surface-elevated border-b border-outline-variant py-4 px-margin-edge overflow-x-auto scrollbar-hide">
+<div class="flex items-center gap-12 min-w-max">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-slate-muted tracking-widest mb-1">CASES ANALYZED</span>
+<span class="font-data-mono text-lg text-primary">12,000+</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-slate-muted tracking-widest mb-1">ACCURACY RATE</span>
+<span class="font-data-mono text-lg text-tertiary">99.2%</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-slate-muted tracking-widest mb-1">EXPERT ANALYSTS</span>
+<span class="font-data-mono text-lg text-secondary">48+</span>
+</div>
+<div class="h-8 w-px bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-slate-muted tracking-widest mb-1">GLOBAL REACH</span>
+<span class="font-data-mono text-lg text-primary">42 COUNTRIES</span>
+</div>
+</div>
+</section>
+<!-- Who We Are -->
+<section class="py-20 px-margin-edge bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="mb-12">
+<div class="font-data-mono text-data-mono text-slate-muted mb-4">01 // OVERVIEW</div>
+<h3 class="font-headline-lg-mobile text-on-surface mb-6">SCIENCE. EVIDENCE. TRUTH.</h3>
+<p class="font-body-md text-on-surface-variant max-w-2xl">
+                        Founded in 2008, ForenSolve Experts has grown into a world-renowned forensic consultancy, delivering science-backed evidence analysis and crime pattern intelligence.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit">
+<!-- Dossier Card 1 -->
+<div class="border border-outline-variant bg-surface-dim p-6 hover:bg-surface-elevated transition-colors relative group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">biotech</span>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Scientific Rigor</h4>
+<p class="font-body-md text-sm text-on-surface-variant">ISO 17025 accredited processes ensuring courtroom admissibility and peer review integrity.</p>
+</div>
+<!-- Dossier Card 2 -->
+<div class="border border-outline-variant bg-surface-dim p-6 hover:bg-surface-elevated transition-colors relative group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-tertiary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-tertiary mb-4 text-3xl">troubleshoot</span>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">AI-Enhanced Analysis</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Proprietary machine learning algorithms process vast datasets to identify hidden crime patterns.</p>
+</div>
+<!-- Dossier Card 3 -->
+<div class="border border-outline-variant bg-surface-dim p-6 hover:bg-surface-elevated transition-colors relative group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary mb-4 text-3xl">gavel</span>
+<h4 class="font-headline-md text-lg text-on-surface mb-3">Legal Integration</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Detailed chain-of-custody documentation and expert witness testimony support.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Intelligence Preview -->
+<section class="py-20 px-margin-edge bg-surface-deep border-t border-outline-variant relative">
+<div class="max-w-container-max mx-auto">
+<div class="font-data-mono text-data-mono text-slate-muted mb-8">02 // INTELLIGENCE_FEED</div>
+<div class="border border-outline-variant bg-surface-elevated relative overflow-hidden">
+<!-- Dossier Header -->
+<div class="bg-surface-dim border-b border-outline-variant p-4 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">REF_NO: 8829</span>
+<span class="font-data-mono text-sm text-on-surface">CASE #FS-2048</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-evidence-green"></span>
+<span class="font-data-mono text-xs text-evidence-green">STATUS: COMPLETE</span>
+</div>
+</div>
+<!-- Dossier Content -->
+<div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+<div class="absolute inset-0 scan-line pointer-events-none"></div>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-4 border-l-2 border-tertiary pl-3">CYBERCRIME: RANSOMWARE TRACE</h4>
+<div class="space-y-4 font-data-mono text-sm text-slate-muted">
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span>TARGET:</span> <span class="text-on-surface">FINANCIAL_SYS_04</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span>VECTORS:</span> <span class="text-tertiary">SPEAR_PHISHING, ZERO_DAY</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span>TRACE_ORIGIN:</span> <span class="text-on-surface">IP_SPOOFED_NODE_7</span>
+</div>
+</div>
+</div>
+<div class="border border-outline-variant bg-surface-dim p-4 h-48 relative flex items-center justify-center">
+<!-- Placeholder for Data Viz -->
+
+<div class="absolute bottom-2 right-2 font-data-mono text-[10px] text-primary">NETWORK_MAP_RENDER.SYS</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Mobile Bottom Navigation Shell (Mapped from NavigationDrawer JSON for mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface-dim border-t border-outline-variant flex justify-around items-center h-20 px-2 pb-safe">
+<!-- Dashboard (Active) -->
+<a class="flex flex-col items-center gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform fill">dashboard</span>
+<span class="font-label-caps text-[10px]">DASHBOARD</span>
+<span class="w-1 h-1 bg-primary rounded-full mt-1"></span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-tertiary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">animated_images</span>
+<span class="font-label-caps text-[10px]">CAPABILITIES</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-tertiary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">analytics</span>
+<span class="font-label-caps text-[10px]">INTELLIGENCE</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-tertiary transition-colors group" href="#">
+<span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">groups</span>
+<span class="font-label-caps text-[10px]">EXPERTS</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-deep border-t border-outline-variant mb-20 md:mb-0">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-margin-edge">
+<div>
+<div class="font-display-lg text-primary text-2xl mb-4">FORENSOLVE</div>
+<p class="font-data-mono text-data-mono text-slate-muted">© 2024 FORENSOLVE INTEL. ALL RIGHTS RESERVED. ACCREDITATION NO: ISO-17025.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-data-mono text-data-mono text-slate-muted hover:text-tertiary-fixed underline transition-all" href="#">DNA ANALYSIS</a>
+<a class="font-data-mono text-data-mono text-slate-muted hover:text-tertiary-fixed underline transition-all" href="#">DIGITAL FORENSICS</a>
+<a class="font-data-mono text-data-mono text-slate-muted hover:text-tertiary-fixed underline transition-all" href="#">BIOMETRICS</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-data-mono text-data-mono text-slate-muted hover:text-tertiary-fixed underline transition-all" href="#">LEGAL COMPLIANCE</a>
+<a class="font-data-mono text-data-mono text-slate-muted hover:text-tertiary-fixed underline transition-all" href="#">PRIVACY PROTOCOL</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "test-01",
+    "quote": "ForenSolve's crime pattern analysis was instrumental in connecting three cold cases spanning 15 years. Their AI-driven correlation engine identified non-obvious links our investigative task force had missed entirely.",
+    "author": "Det. David Harris",
+    "initials": "DH",
+    "designation": "Lead Investigator",
+    "organization": "NYPD Major Crimes Division",
+    "badge": "COLD CASE SOLVED"
+  },
+  {
+    "id": "test-02",
+    "quote": "Their digital forensics team recovered critical volatile memory evidence from encrypted drives that proved pivotal in our high-stakes corporate espionage prosecution. Exceptional technical precision and courtroom poise.",
+    "author": "Laura Stevens, Esq.",
+    "initials": "LS",
+    "designation": "Senior Partner",
+    "organization": "Sterling & Associates Law Firm",
+    "badge": "FEDERAL LITIGATION"
+  },
+  {
+    "id": "test-03",
+    "quote": "The predictive analytics dashboard has transformed how our regional command allocates tactical resources. Crime incidents in targeted high-risk zones dropped 34% within the first quarter of deployment.",
+    "author": "Chief Robert Chen",
+    "initials": "RC",
+    "designation": "Chief of Police",
+    "organization": "Metro Police Department",
+    "badge": "34% INCIDENT REDUCTION"
+  }
+]
